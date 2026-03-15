@@ -1,8 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// Attach to a trigger zone at the finish line.
-/// </summary>
 public class FinishTrigger : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
