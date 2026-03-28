@@ -16,11 +16,6 @@ public class GameData
     public List<LeaderboardEntry> leaderboard = new List<LeaderboardEntry>();
 }
 
-/// <summary>
-/// Глобальне сховище стану гри. Єдиний екземпляр (Singleton).
-/// Зберігає: кількість життів, зіткнення, монети, час, таблицю рекордів.
-/// Генерує подію OnGameOver при втраті всіх життів або закінченні часу.
-/// </summary>
 public class GameStore : MonoBehaviour
 {
     // ── Singleton ────────────────────────────────────────────────────
@@ -87,7 +82,6 @@ public class GameStore : MonoBehaviour
 
     // ── Публічні методи ───────────────────────────────────────────────
 
-    /// <summary>Викликати при потраплянні в пастку або яму.</summary>
     public void LoseLife()
     {
         if (IsGameOver) return;
@@ -101,7 +95,6 @@ public class GameStore : MonoBehaviour
             TriggerGameOver("Всі життя витрачені!");
     }
 
-    /// <summary>Викликати при збиранні монети.</summary>
     public void AddCoin()
     {
         if (IsGameOver) return;
@@ -110,7 +103,6 @@ public class GameStore : MonoBehaviour
         Debug.Log($"[GameStore] Монета зібрана! Всього: {CoinsCollected}");
     }
 
-    /// <summary>Викликати при завершенні рівня.</summary>
     public void OnLevelComplete()
     {
         if (IsGameOver) return;
@@ -157,7 +149,6 @@ public class GameStore : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    /// <summary>Обробник події OnGameOver — виводить повідомлення про програш.</summary>
     private void HandleGameOver()
     {
         Debug.Log("╔══════════════════════════════════════╗");
