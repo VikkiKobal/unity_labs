@@ -1,8 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// Плавна камера від третьої особи, що слідує за гравцем.
-/// </summary>
 public class CameraFollow : MonoBehaviour
 {
     [Header("Ціль")]
