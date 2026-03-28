@@ -29,8 +29,9 @@ public class PlayerController : MonoBehaviour
         spawnPosition = startPoint != null ? startPoint.position : transform.position;
     }
 
-    void Update()
+void Update()
     {
+        if (GameStore.Instance != null && GameStore.Instance.IsGameOver) return;
         HandleBoost();
         float speed = IsBoosting ? forwardSpeed * speedBoostMultiplier : forwardSpeed;
         transform.Translate(Vector3.forward * speed * Time.deltaTime, Space.World);
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
         if (transform.position.y < -5f)
-            Respawn();
+            Respawn(loseLife: true);
     }
 
     void OnCollisionEnter(Collision col)
@@ -57,10 +58,10 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
     }
 
-    void OnTriggerEnter(Collider other)
+void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Pit"))
-            Respawn();
+            Respawn(loseLife: true);
         if (other.CompareTag("Finish"))
         {
             forwardSpeed = 0f;
@@ -88,8 +89,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Respawn()
+public void Respawn(bool loseLife = true)
     {
+        if (loseLife && GameStore.Instance != null && !GameStore.Instance.IsGameOver)
+            GameStore.Instance.LoseLife();
+        if (GameStore.Instance != null && GameStore.Instance.IsGameOver)
+            return;
         transform.position = spawnPosition;
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
