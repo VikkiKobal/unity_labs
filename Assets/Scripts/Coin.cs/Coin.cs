@@ -1,9 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// Монета, яку гравець може зібрати.
-/// Обертається для привабливості. При дотику — нараховує очко в GameStore.
-/// </summary>
 public class Coin : MonoBehaviour
 {
     [Header("Анімація")]
@@ -20,7 +16,6 @@ public class Coin : MonoBehaviour
 
     void Update()
     {
-        // Обертання
         transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime, Space.World);
         // Боввання вверх-вниз
         float newY = startY + Mathf.Sin(Time.time * bobFrequency) * bobAmplitude;
