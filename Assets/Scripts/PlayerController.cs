@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         spawnPosition = startPoint != null ? startPoint.position : transform.position;
     }
 
-void Update()
+    void Update()
     {
         if (GameStore.Instance != null && GameStore.Instance.IsGameOver) return;
         HandleBoost();
@@ -58,7 +58,7 @@ void Update()
             isGrounded = false;
     }
 
-void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Pit"))
             Respawn(loseLife: true);
@@ -89,7 +89,7 @@ void OnTriggerEnter(Collider other)
         }
     }
 
-public void Respawn(bool loseLife = true)
+    public void Respawn(bool loseLife = true)
     {
         if (loseLife && GameStore.Instance != null && !GameStore.Instance.IsGameOver)
             GameStore.Instance.LoseLife();

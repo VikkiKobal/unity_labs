@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - Coin
   - Trap
+  - Car
   layers:
   - Default
   - TransparentFX

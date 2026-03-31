@@ -1,11 +1,12 @@
-# This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
-#
 .DS_Store
 .cursor/
 unity-mcp-advanced/
 .utmp/
+agent-transcripts/
+terminals/
+.clinerules/
+.claude/
+[Rr]ider/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
