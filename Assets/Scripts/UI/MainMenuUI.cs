@@ -2,9 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-/// <summary>
-/// Головне меню паузи/програшу: Restart, Quit, Records.
-/// </summary>
 public class MainMenuUI : MonoBehaviour
 {
     public static MainMenuUI Instance { get; private set; }
