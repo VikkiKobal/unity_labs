@@ -1,9 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>
-/// Таблиця рекордів з логінами гравців.
-/// </summary>
 public class LeaderboardUI : MonoBehaviour
 {
     public static LeaderboardUI Instance { get; private set; }
@@ -18,7 +15,6 @@ public class LeaderboardUI : MonoBehaviour
         Instance = this;
     }
 
-    /// <summary>Оновити список рекордів.</summary>
     public void Refresh()
     {
         // Очистити старі рядки
