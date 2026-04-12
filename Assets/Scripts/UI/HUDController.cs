@@ -1,9 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>
-/// HUD під час гри: таймер, зіткнення, монети, життя.
-/// </summary>
 public class HUDController : MonoBehaviour
 {
     public static HUDController Instance { get; private set; }
