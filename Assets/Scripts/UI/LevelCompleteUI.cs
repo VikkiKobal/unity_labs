@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-/// <summary>Екран завершення рівня — перемога або програш.</summary>
 public class LevelCompleteUI : MonoBehaviour
 {
     public static LevelCompleteUI Instance { get; private set; }
