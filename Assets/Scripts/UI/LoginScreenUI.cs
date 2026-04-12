@@ -1,10 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>
-/// Екран введення логіну перед початком гри.
-/// Прикріпити до GameObject з панеллю логіну.
-/// </summary>
 public class LoginScreenUI : MonoBehaviour
 {
     [Header("UI елементи")]
