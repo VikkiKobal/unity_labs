@@ -34,7 +34,6 @@ public class Lab5AnimationSetup
         ExtractMaterials();
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[Lab5] Step 1 done — FBX imported as Humanoid + materials extracted.");
     }
 
     [MenuItem("Tools/Lab 5/1b - Extract Materials Only")]
@@ -46,7 +45,6 @@ public class Lab5AnimationSetup
         ExtractMaterials();
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[Lab5] Materials extracted.");
     }
 
     [MenuItem("Tools/Lab 5/1c - Fix Material Textures")]
@@ -95,7 +93,6 @@ public class Lab5AnimationSetup
             }
 
             EditorUtility.SetDirty(mat);
-            Debug.Log($"[Lab5] Fixed material: {kv.Key}");
         }
 
         // Also assign materials to SkinnedMeshRenderers in scene
@@ -103,7 +100,6 @@ public class Lab5AnimationSetup
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[Lab5] Material textures fixed!");
     }
 
     static void AssignMaterialsToPlayer()
@@ -174,7 +170,6 @@ public class Lab5AnimationSetup
         CreatePlayerController();
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log("[Lab5] Step 2 done — AnimationClips + Controllers created.");
     }
 
     [MenuItem("Tools/Lab 5/3 - Setup Player in Scene")]
@@ -183,7 +178,6 @@ public class Lab5AnimationSetup
         SetupScenePlayer();
         SetupCoinPrefabs();
         EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
-        Debug.Log("[Lab5] Step 3 done — Player & Coins configured in scene.");
     }
 
     [MenuItem("Tools/Lab 5/Run All Steps")]
