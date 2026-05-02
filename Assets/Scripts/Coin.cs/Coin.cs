@@ -1,36 +1,46 @@
+using System.Collections;
 using UnityEngine;
 
-/// <summary>
-/// Монета, яку гравець може зібрати.
-/// Обертається для привабливості. При дотику — нараховує очко в GameStore.
-/// </summary>
 public class Coin : MonoBehaviour
 {
-    [Header("Анімація")]
-    public float rotateSpeed = 120f;
-    public float bobAmplitude = 0.15f;
-    public float bobFrequency = 2f;
+    [Tooltip("Тривалість анімації підбирання перед знищенням")]
+    public float pickupAnimDuration = 0.45f;
 
-    private float startY;
+    private Animator   _anim;
+    private Collider   _col;
+    private bool       _picked;
 
     void Start()
     {
-        startY = transform.position.y;
-    }
-
-    void Update()
-    {
-        // Обертання
-        transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime, Space.World);
-        // Боввання вверх-вниз
-        float newY = startY + Mathf.Sin(Time.time * bobFrequency) * bobAmplitude;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        _anim = GetComponent<Animator>();
+        _col  = GetComponent<Collider>();
+        // Rotation and bobbing are handled entirely by the CoinController animator
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Player")) return;
+        if (_picked || !other.CompareTag("Player")) return;
+        _picked = true;
+
         GameStore.Instance?.AddCoin();
+
+        // Disable collider so trigger can't fire twice
+        if (_col != null) _col.enabled = false;
+
+        if (_anim != null)
+        {
+            _anim.SetTrigger("Pickup");
+            StartCoroutine(DestroyAfter(pickupAnimDuration));
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    IEnumerator DestroyAfter(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         Destroy(gameObject);
     }
 }

@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour
     public float boostDuration = 3f;
     public Transform startPoint;
 
-    public bool IsBoosting { get; private set; }
+    public bool IsBoosting  { get; private set; }
+    public bool IsGrounded  { get; private set; }
     public float boostTimer { get; private set; }
 
     private Rigidbody rb;
@@ -49,13 +50,19 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.CompareTag("Ground"))
+        {
             isGrounded = true;
+            IsGrounded = true;
+        }
     }
 
     void OnCollisionExit(Collision col)
     {
         if (col.gameObject.CompareTag("Ground"))
+        {
             isGrounded = false;
+            IsGrounded = false;
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -65,6 +72,7 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Finish"))
         {
             forwardSpeed = 0f;
+            GetComponent<PlayerAnimatorBridge>()?.TriggerCelebrate();
             if (GameManager.Instance != null)
                 GameManager.Instance.OnFinish();
         }

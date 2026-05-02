@@ -14,19 +14,19 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_Fog: 1
+  m_FogColor: {r: 0.55, g: 0.65, b: 0.85, a: 1}
+  m_FogMode: 1
   m_FogDensity: 0.01
-  m_LinearFogStart: 0
-  m_LinearFogEnd: 300
+  m_LinearFogStart: 30
+  m_LinearFogEnd: 120
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.2
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c50c8fb1785a849c3923415c95784f9f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1690764041}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -119,6 +119,116 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &243642355
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 480683329}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8113662451844533969, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 496db1451236941adb37a5ab7468f860, type: 2}
+    - target: {fileID: -6439692978013619079, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1167a9b45386f41dfbc49b0429bb6734, type: 2}
+    - target: {fileID: 919132149155446097, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581014216829998132, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1167a9b45386f41dfbc49b0429bb6734, type: 2}
+    - target: {fileID: 5866666021909216657, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+    - target: {fileID: 5866666021909216657, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9b5540e36f2fc4dc8b44eb84a36b7e06, type: 2}
+    - target: {fileID: 5866666021909216657, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116774802218284060, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 496db1451236941adb37a5ab7468f860, type: 2}
+    - target: {fileID: 7500829582323976533, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1167a9b45386f41dfbc49b0429bb6734, type: 2}
+    - target: {fileID: 7927558736831396235, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1167a9b45386f41dfbc49b0429bb6734, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+--- !u!4 &243642356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
+  m_PrefabInstance: {fileID: 243642355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &418103114
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +242,7 @@ GameObject:
   - component: {fileID: 418103117}
   - component: {fileID: 418103116}
   - component: {fileID: 418103115}
+  - component: {fileID: 418103120}
   m_Layer: 0
   m_Name: Coin_4
   m_TagString: Coin
@@ -151,9 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &418103116
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -247,6 +356,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &418103120
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418103114}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &480683323
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +392,7 @@ GameObject:
   - component: {fileID: 480683326}
   - component: {fileID: 480683325}
   - component: {fileID: 480683324}
+  - component: {fileID: 480683330}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -320,7 +452,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480683323}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -405,9 +537,24 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 243642356}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &480683330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480683323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605cb79f209b841cca07adbcec20cffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimatorBridge
+  controllerAsset: {fileID: 9100000, guid: 9b5540e36f2fc4dc8b44eb84a36b7e06, type: 2}
+  avatarAsset: {fileID: 9000000, guid: cf882a36f1e5347c8bfa17780f361348, type: 3}
 --- !u!1 &522440392
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +568,7 @@ GameObject:
   - component: {fileID: 522440395}
   - component: {fileID: 522440394}
   - component: {fileID: 522440393}
+  - component: {fileID: 522440398}
   m_Layer: 0
   m_Name: Coin_7
   m_TagString: Coin
@@ -440,9 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &522440394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -536,6 +682,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &522440398
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522440392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &587986718
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,6 +941,7 @@ GameObject:
   - component: {fileID: 745698264}
   - component: {fileID: 745698263}
   - component: {fileID: 745698262}
+  - component: {fileID: 745698267}
   m_Layer: 0
   m_Name: Coin_3
   m_TagString: Coin
@@ -792,9 +961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &745698263
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -888,6 +1055,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &745698267
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745698261}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &779070448
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,6 +1090,7 @@ GameObject:
   - component: {fileID: 779070451}
   - component: {fileID: 779070450}
   - component: {fileID: 779070449}
+  - component: {fileID: 779070454}
   m_Layer: 0
   m_Name: Coin_10
   m_TagString: Coin
@@ -920,9 +1110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &779070450
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1016,6 +1204,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &779070454
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779070448}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &815596227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1298,7 @@ GameObject:
   - component: {fileID: 887113448}
   - component: {fileID: 887113447}
   - component: {fileID: 887113446}
+  - component: {fileID: 887113451}
   m_Layer: 0
   m_Name: Coin_12
   m_TagString: Coin
@@ -1107,9 +1318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &887113447
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1203,6 +1412,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &887113451
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887113445}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &967355732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,6 +1546,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1077794038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077794040}
+  - component: {fileID: 1077794039}
+  m_Layer: 0
+  m_Name: PostProcessing_Global
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1077794039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077794038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 10
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 3d19002dd8ee1402da02bfdcccb7bbd8, type: 2}
+--- !u!4 &1077794040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077794038}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181145166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,6 +1608,7 @@ GameObject:
   - component: {fileID: 1181145169}
   - component: {fileID: 1181145168}
   - component: {fileID: 1181145167}
+  - component: {fileID: 1181145172}
   m_Layer: 0
   m_Name: Coin_11
   m_TagString: Coin
@@ -1347,9 +1628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &1181145168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1443,6 +1722,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1181145172
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181145166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1203663472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +2007,7 @@ GameObject:
   - component: {fileID: 1287702266}
   - component: {fileID: 1287702265}
   - component: {fileID: 1287702264}
+  - component: {fileID: 1287702269}
   m_Layer: 0
   m_Name: Coin_6
   m_TagString: Coin
@@ -1725,9 +2027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &1287702265
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1821,6 +2121,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1287702269
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287702263}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1393153061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,6 +2310,7 @@ GameObject:
   - component: {fileID: 1490650379}
   - component: {fileID: 1490650378}
   - component: {fileID: 1490650377}
+  - component: {fileID: 1490650382}
   m_Layer: 0
   m_Name: Coin_5
   m_TagString: Coin
@@ -2007,9 +2330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &1490650378
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2103,6 +2424,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1490650382
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490650376}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1491985048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,6 +2571,7 @@ GameObject:
   - component: {fileID: 1494646140}
   - component: {fileID: 1494646139}
   - component: {fileID: 1494646138}
+  - component: {fileID: 1494646143}
   m_Layer: 0
   m_Name: Coin_9
   m_TagString: Coin
@@ -2247,9 +2591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &1494646139
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2343,6 +2685,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1494646143
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494646137}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1508110465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,8 +3032,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 0.95, b: 0.82, a: 1}
+  m_Intensity: 1.4
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2678,7 +3042,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.7
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -2731,7 +3095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690764039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.36964384, y: -0.23911761, z: 0.09904577, w: 0.8923991}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2751,6 +3115,7 @@ GameObject:
   - component: {fileID: 1694893102}
   - component: {fileID: 1694893101}
   - component: {fileID: 1694893100}
+  - component: {fileID: 1694893105}
   m_Layer: 0
   m_Name: Coin_2
   m_TagString: Coin
@@ -2770,9 +3135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &1694893101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2866,6 +3229,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1694893105
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694893099}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1877322491
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,6 +3376,7 @@ GameObject:
   - component: {fileID: 1878515667}
   - component: {fileID: 1878515666}
   - component: {fileID: 1878515665}
+  - component: {fileID: 1878515670}
   m_Layer: 0
   m_Name: Coin_8
   m_TagString: Coin
@@ -3010,9 +3396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &1878515666
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3106,6 +3490,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1878515670
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878515664}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1883573455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3231,6 +3637,7 @@ GameObject:
   - component: {fileID: 1910713417}
   - component: {fileID: 1910713416}
   - component: {fileID: 1910713415}
+  - component: {fileID: 1910713420}
   m_Layer: 0
   m_Name: Coin_1
   m_TagString: Coin
@@ -3250,9 +3657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b8e36e6a0d45c49c1a7aaf279e9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
-  rotateSpeed: 120
-  bobAmplitude: 0.15
-  bobFrequency: 2
+  pickupAnimDuration: 0.45
 --- !u!23 &1910713416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3346,6 +3751,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1910713420
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910713414}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dda793e776d24e49becfc77e209c41f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2077778598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3490,3 +3917,4 @@ SceneRoots:
   - {fileID: 779070453}
   - {fileID: 1181145171}
   - {fileID: 887113450}
+  - {fileID: 1077794040}
